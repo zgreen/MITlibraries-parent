@@ -1,5 +1,5 @@
 MIT Libraries WP Parent Theme - TEST Instance
 ========
 
-WARNING: This repo is frequently rebased onto (Prod)[https://github.com/zgreen/MITlibraries-parent] and/or forced. Pull at your own risk.
+WARNING: This repo is frequently rebased onto [Prod](https://github.com/zgreen/MITlibraries-parent) and/or forced. Pull at your own risk.
 --------
