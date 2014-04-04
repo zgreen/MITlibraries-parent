@@ -2,4 +2,7 @@
 	input[type=text] {
 		height: inherit; /* Fights bootstrap--delete when bootstrap is removed */
 	}
+	input[type=submit] {
+		@include button-primary;
+	}
 }

@@ -4354,6 +4354,27 @@ you can use the generic selector below, but it's slower:
   height: inherit;
   /* Fights bootstrap--delete when bootstrap is removed */
 }
+.search input[type=submit] {
+  background: #eeeeee;
+  border: none;
+  border-radius: 3px;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #333;
+  line-height: 1;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+.search input[type=submit]:hover {
+  background: #fbfbfb;
+}
+.search input[type=submit]:active {
+  background: #eeeeee;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
+  color: #bbbbbb;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
+  transition-duration: 0s;
+}
 
 .rss-feed * {
   font-size: 18px;
