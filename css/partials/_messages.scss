@@ -66,4 +66,7 @@
 			color: $color-accent-primary;
 		}
 	}
+	.entry-content {
+		@include body-text;
+	}
 }
