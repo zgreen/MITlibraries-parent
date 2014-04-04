@@ -1,0 +1,25 @@
+.rss-feed {
+	* {
+		@include body-text;
+	}
+	.timestamp,
+	.callnos {
+		margin-left: $margin-left;
+	}
+	.callnos {
+		&:after {
+			background: #333;
+			content: '';
+			display: block;
+			height: 1px;
+			margin-bottom: calculateRem(24px);
+			margin-top: calculateRem(16px);
+			width: 100%;
+		}
+	}
+	ul {
+		li {
+			margin-left: $margin-left;
+		}
+	}
+}
