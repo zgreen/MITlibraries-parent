@@ -1,6 +1,10 @@
 .search {
 	input[type=text] {
 		height: inherit; /* Fights bootstrap--delete when bootstrap is removed */
+		&:focus {
+			box-shadow: none; /* Fights bootstrap--delete when bootstrap is removed */
+			border: 1px solid #ccc; /* Fights bootstrap--delete when bootstrap is removed */
+		}
 	}
 	input[type=submit] {
 		@include button-primary;

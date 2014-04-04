@@ -4354,6 +4354,12 @@ you can use the generic selector below, but it's slower:
   height: inherit;
   /* Fights bootstrap--delete when bootstrap is removed */
 }
+.search input[type=text]:focus {
+  box-shadow: none;
+  /* Fights bootstrap--delete when bootstrap is removed */
+  border: 1px solid #ccc;
+  /* Fights bootstrap--delete when bootstrap is removed */
+}
 .search input[type=submit] {
   background: #eeeeee;
   border: none;
