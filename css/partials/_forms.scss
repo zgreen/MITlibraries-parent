@@ -1,0 +1,5 @@
+.search {
+	input[type=text] {
+		height: inherit; /* Fights bootstrap--delete when bootstrap is removed */
+	}
+}
