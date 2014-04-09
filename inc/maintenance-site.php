@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>libraries.mit.edu Under Maintenance</title>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
 	<style>
 		* {
 			box-sizing: border-box;
@@ -15,9 +15,12 @@
 		  -o-background-size: cover;
 		  background-size: cover;
 		}
-		.maintenance {
+		.maintenance h1 {
 			font-family: 'Open Sans', sans-serif;
 			font-weight: 300;
+		}
+		.maintenance h1 .name-site {
+			font-weight: bold;
 		}
 	</style>
 </head>
