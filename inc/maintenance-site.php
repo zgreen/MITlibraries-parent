@@ -15,6 +15,15 @@
 		  -o-background-size: cover;
 		  background-size: cover;
 		}
+		.wrap {
+			background: #fff;
+			border-top: 4px solid #fc3;
+			box-shadow: 0 0 3px #333;
+			color: hsla(45, 100.0000%, 9.0000%, 1.0000);;
+			margin: 8rem auto 0;
+			padding: 4rem;
+			max-width: 60rem;
+		}
 		.maintenance h1 {
 			font-family: 'Open Sans', sans-serif;
 			font-weight: 300;
