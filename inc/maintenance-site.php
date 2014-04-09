@@ -23,7 +23,7 @@
 </head>
 <body class="maintenance">
 	<div class="wrap">
-		<h1>Briefly unavailable for scheduled maintenance. Check back in a minute.</h1>
+		<h1><span class="name-site">libraries.mit.edu</span> is undergoing scheduled maintenance. Please check back in a few minutes.</h1>
 	</div>
 </body>
 </html>
