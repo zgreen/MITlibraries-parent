@@ -36,7 +36,7 @@
 </head>
 <body class="maintenance">
 	<div class="wrap">
-		<h1><span class="name-site">libraries.mit.edu</span> is undergoing scheduled maintenance. Please check back in a few minutes.</h1>
+		<h1><span class="name-site">libraries.mit.edu</span> is undergoing scheduled maintenance.<br>Please check back in a few minutes.</h1>
 		<h2 class="resources">You may continue to access the MIT Libraries' search tools <a href="/">via the homepage.</a></h2>
 	</div>
 </body>
