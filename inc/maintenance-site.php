@@ -5,6 +5,9 @@
 	<title>libraries.mit.edu Under Maintenance</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 	<style>
+		* {
+			box-sizing: border-box;
+		}
 		html {
 			background: url(/wp-content/themes/libraries/images/dome-indoor-blurred-sfw.jpg) no-repeat center center fixed; 
 		  -webkit-background-size: cover;
