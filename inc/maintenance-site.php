@@ -19,6 +19,8 @@
 	</style>
 </head>
 <body class="maintenance">
-	<h1>Briefly unavailable for scheduled maintenance. Check back in a minute.</h1>
+	<div class="wrap">
+		<h1>Briefly unavailable for scheduled maintenance. Check back in a minute.</h1>
+	</div>
 </body>
 </html>
