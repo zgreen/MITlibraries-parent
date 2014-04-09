@@ -32,6 +32,19 @@
 		.maintenance h1 .name-site {
 			font-weight: bold;
 		}
+		@media screen and (max-width: 768px) {
+			.wrap {
+				width: 40rem;
+			}
+		}
+		@media screen and (max-width: 480px) {
+			.wrap {
+				font-size: 0.75em;
+				margin-top: 2rem;
+				padding: 1rem;
+				width: 17rem;
+			}
+		}
 	</style>
 </head>
 <body class="maintenance">
