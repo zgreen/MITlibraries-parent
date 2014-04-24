@@ -1,0 +1,10 @@
+terms : [{
+	"test-term-1" : {
+		"start-date" : "20140101",
+		"end-date" : "20140601",
+		"locations" : {
+			"location" : "barker",
+			"default" : "8am-11pm"
+		}
+	}
+}]
