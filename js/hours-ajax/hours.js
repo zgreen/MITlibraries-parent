@@ -3,13 +3,6 @@ $(function(){
 	var libName = $('h1 .libraryName').html();
 	var special = moment().format('YYYYMMDD');
 	console.log(special);
-	var isHoliday = function() {
-										$('body').get('http://mitlibraries.dev/wp-content/themes/libraries/hours.html .special');
-										if ($(this).contains(special)) {
-											$('h1').append('It is a holiday!');
-										}
-									};
-	isHoliday();
 		
 	if (day == 'Monday', 'Tuesday', 'Wednesday', 'Thursday') {
 		if (libName == 'Barker Library'){
