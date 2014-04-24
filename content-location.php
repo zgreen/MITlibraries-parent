@@ -90,11 +90,14 @@
 				show on map: <a href="<?php echo $mapPage.$slug; ?>"><?php echo $building ?> <i class="icon-arrow-right"></i></a>
 			</div>
 		</div>
-		
+
 		<div class="todayHours">
+			<?php echo $locationId; ?>
 			<?php if ($hasHours): ?>
 			Today's hours:<br/>
-			<b><?php echo $hoursToday; ?></b></br>
+			<div class="hours-ajax">
+				<?php get_template_part('inc/hours', 'location'); ?>
+			</div>
 			<a href="/hours">See all hours <i class="icon-arrow-right"></i></a>
 			<?php endif; ?>
 		</div>					
