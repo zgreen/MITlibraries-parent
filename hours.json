@@ -1,12 +1,24 @@
 {
 	"terms" : {
-		"test-term-1" : {
-			"start-date" : "20140101",
-			"end-date" : "20140601",
+		"spring2014" : {
+			"dateStart" : "20140101",
+			"dateEnd" : "20140601",
 			"locations" : {
-				"location" : "barker",
-				"default" : "8am-11pm"
+				"barker" : {
+					"hoursDefault" : "8am-11pm",
+					"fri" : "9am-midnight",
+					"sat" : "11am-midnight",
+					"sun" : "noon-midnight"
+				}
 			}
+		},
+		"summer2014" : {
+			"dateStart" : "20140526",
+			"dateEnd" : "20140901"
 		}
-	}
+	},
+	"holidays" : {
+		"memorial-day" : "20140526"
+	},
+	"test" : "hello, world"
 }
