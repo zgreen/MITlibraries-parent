@@ -3,8 +3,20 @@ $(function(){
 	var libName = $('h1 .libraryName').html();
 	var special = moment().format('YYYYMMDD');
 	console.log(special);
+
+	// Check for holidays.
+	var holidays = $.get('/wp-content/themes/libraries/hours.html');
+	if (function(){
+			$(holidays).each('.special li').contains(day)
+			}) {
+				console.log('today is a holiday');
+				$('.hours-ajax').html('Closed');
+				var closed = true;
+			};
+
+
 		
-	if (day == 'Monday', 'Tuesday', 'Wednesday', 'Thursday') {
+	if ([day == 'Monday', 'Tuesday', 'Wednesday', 'Thursday'][closed == false]) {
 		if (libName == 'Barker Library'){
 			$('.hours-ajax').load('/wp-content/themes/libraries/hours.html .barker .hours-default');
 		}
@@ -30,7 +42,7 @@ $(function(){
 			$('.hours-ajax').load('/wp-content/themes/libraries/hours.html .lsa .hours-default');
 		}
 	}
-	if (day == 'Friday') {
+	if ([day == 'Friday'][closed == false]) {
 		if (libName == 'Barker Library'){
 			$('.hours-ajax').load('/wp-content/themes/libraries/hours.html .barker .hours-fri');
 		}
