@@ -107,7 +107,7 @@
         <span class="heading-col">About us</span>
         <a href="/contact">Contact us</a>
         <a href="/use-policies">Library use policy</a>
-        <a href="/about/#Jobs">Jobs</a>
+        <a href="/jobs">Jobs</a>
         <a href="/giving">Giving to the MIT Libraries</a>
         <a href="/about" class="bottom">More about us</a>
       </div>
