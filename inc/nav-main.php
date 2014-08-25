@@ -29,6 +29,7 @@
         <a href="http://dspace.mit.edu/">DSpace@MIT <span class="about">MIT research</span></a>
         <a href="http://dome.mit.edu/">Dome <span class="about">MIT-digitized images, maps, etc.</span></a>
         <a href="/about/site-search">Site search</a>
+        <a href="/about/site-search">Site search</a>
       </div>
     </div><!-- end div.links-sub -->
   </div><!-- end div.links-primary -->
