@@ -5,14 +5,45 @@
 	<title>Tabletop Test</title>
 </head>
 <body>
-	<ul id="tabletop-locations" class="locations">
-    <li class="barker">Barker <span>Hours today: </span></li>
-    <li>Hayden</li>
-    <li>Dewey</li>
-    <li>Archives</li>
-    <li>Lewis</li>
-    <li>Rotch</li> 
-  </ul>
+	<table>
+    <tbody>
+      <tr>
+        <th>Location</th>
+        <th>Opens at</th>
+        <th>Closes at</th>
+      </tr>
+      <tr>
+        <td class="barker">Barker</td>
+        <td class="hours-open"></td>
+        <td class="hours-close"></td>
+      </tr>
+      <tr>
+        <td class="dewey">Dewey</td>
+        <td class="hours-open"></td>
+        <td class="hours-close"></td>
+      </tr>
+      <tr>
+        <td class="hayden">Hayden</td>
+        <td class="hours-open"></td>
+        <td class="hours-close"></td>
+      </tr>
+      <tr>
+        <td class="archives">Archives</td>
+        <td class="hours-open"></td>
+        <td class="hours-close"></td>
+      </tr>
+      <tr>
+        <td class="lewis">Lewis</td>
+        <td class="hours-open"></td>
+        <td class="hours-close"></td>
+      </tr>
+      <tr>
+        <td class="rotch">Rotch</td>
+        <td class="hours-open"></td>
+        <td class="hours-close"></td>
+      </tr>
+    </tbody>
+  </table>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script>(function(global) {
   "use strict";
@@ -520,36 +551,276 @@
     yyyy = today.getFullYear();
     today = m + "/" + d + "/" + yyyy;
     
-    // Locations
+    // Day of week
+    var day = new Date().getDay();
+    console.log('the day today is '+day);
 
-    // Count the locations
-    var locationsNum = data.locations.elements.length;
-    console.log(locationsNum);
+    //
+    // Locations
+    //
+
+    var barker = data.barker;
+    var dewey = data.dewey;
+    var hayden = data.hayden;
+    var archives = data.archives;
+    var lewis = data.lewis;
+    var rotch = data.rotch;
+
     // Empty locations array
     var locations = [];
-    // Make an array of all locations
-    for (var i = 0; i < locationsNum; i++) {
-      locations.push(data.locations.elements[i].location.toLowerCase());
+
+    // Add all locations
+    locations.push(barker, dewey, hayden, archives, lewis, rotch);
+
+    for (var i = 0; i < locations.length; i++) {
+      // Each location
+      var location = locations[i];
+      
+      // Location name
+      var locName = location.name;
+      // Standard hours for each location
+      //var locHours = location.elements[0];
+      //var locHours = locName+'Hours';
+      //console.log(locName);
+      if ($.inArray(locName, location)) {
+        var hoursArr = [locName];
+        // for (var ii = 0; ii < location.elements[0].length; ii++) {
+        //   var hours = 
+        // };
+        hoursArr.push(location.elements[0]);
+        var locHours = hoursArr[1];
+      }
+      // for (var ii = 0; ii < 14; ii++) {
+      //   console.log(locHours[ii])
+      // };
+
+      //$('body').append(lochours.mondayopen);
+      //$.inArray(locName, hoursArr)
+
+      //console.log($.inArray(locName, hoursArr))
+      
     };
 
-    console.log(locations);
+    // Standard hours
+    var barkerHours = barker.elements[0];
+    var deweyHours = dewey.elements[0];
+    var haydenHours = hayden.elements[0];
+    var archivesHours = archives.elements[0];
+    var lewisHours = lewis.elements[0];
+    var rotchHours = rotch.elements[0];
 
-    // var barker
+    // Monday
+    if (day === 1) {
+
+        $('table .barker + .hours-open').text(barkerHours.mondayopen);
+        $('table .barker + .hours-close').text(barkerHours.mondayclose);
+
+        $('table .dewey + .hours-open').text(barkerHours.mondayopen);
+        $('table .dewey + .hours-close').text(barkerHours.mondayclose);
+
+        $('table .hayden + .hours-open').text(barkerHours.mondayopen);
+        $('table .hayden + .hours-close').text(barkerHours.mondayclose);
+
+        $('table .archives + .hours-open').text(barkerHours.mondayopen);
+        $('table .archives + .hours-close').text(barkerHours.mondayclose);
+
+        $('table .lewis + .hours-open').text(barkerHours.mondayopen);
+        $('table .lewis + .hours-close').text(barkerHours.mondayclose);
+
+        $('table .rotch + .hours-open').text(barkerHours.mondayopen);
+        $('table .rotch + .hours-close').text(barkerHours.mondayclose);
+
+    }
+
+    // Tuesday
+    if (day === 2) {
+
+        $('table .barker + .hours-open').text(barkerHours.tuesdayopen);
+        $('table .barker + .hours-close').text(barkerHours.tuesdayclose);
+
+        $('table .dewey + .hours-open').text(barkerHours.tuesdayopen);
+        $('table .dewey + .hours-close').text(barkerHours.tuesdayclose);
+
+        $('table .hayden + .hours-open').text(barkerHours.tuesdayopen);
+        $('table .hayden + .hours-close').text(barkerHours.tuesdayclose);
+
+        $('table .archives + .hours-open').text(barkerHours.tuesdayopen);
+        $('table .archives + .hours-close').text(barkerHours.tuesdayclose);
+
+        $('table .lewis + .hours-open').text(barkerHours.tuesdayopen);
+        $('table .lewis + .hours-close').text(barkerHours.tuesdayclose);
+
+        $('table .rotch + .hours-open').text(barkerHours.tuesdayopen);
+        $('table .rotch + .hours-close').text(barkerHours.tuesdayclose);
+
+    }
+
+    // Wednesday
+    if (day === 3) {
+
+        $('table .barker + .hours-open').text(barkerHours.wednesdayopen);
+        $('table .barker + .hours-close').text(barkerHours.wednesdayclose);
+
+        $('table .dewey + .hours-open').text(barkerHours.wednesdayopen);
+        $('table .dewey + .hours-close').text(barkerHours.wednesdayclose);
+
+        $('table .hayden + .hours-open').text(barkerHours.wednesdayopen);
+        $('table .hayden + .hours-close').text(barkerHours.wednesdayclose);
+
+        $('table .archives + .hours-open').text(barkerHours.wednesdayopen);
+        $('table .archives + .hours-close').text(barkerHours.wednesdayclose);
+
+        $('table .lewis + .hours-open').text(barkerHours.wednesdayopen);
+        $('table .lewis + .hours-close').text(barkerHours.wednesdayclose);
+
+        $('table .rotch + .hours-open').text(barkerHours.wednesdayopen);
+        $('table .rotch + .hours-close').text(barkerHours.wednesdayclose);
+
+    }
+
+    // Thursday
+    if (day === 4) {
+
+        $('table .barker + .hours-open').text(barkerHours.thursdayopen);
+        $('table .barker + .hours-open + .hours-close').text(barkerHours.thursdayclose);
+
+        $('table .dewey + .hours-open').text(deweyHours.thursdayopen);
+        if (deweyHours.thursdayclose != '') {
+          $('table .dewey + .hours-open + .hours-close').text(deweyHours.thursdayclose);
+        }
+        else {
+          $('table .dewey + .hours-open + .hours-close').text('hours not set');
+        }
+        
+
+        $('table .hayden + .hours-open').text(barkerHours.thursdayopen);
+        $('table .hayden + .hours-close').text(barkerHours.thursdayclose);
+
+        $('table .archives + .hours-open').text(barkerHours.thursdayopen);
+        $('table .archives + .hours-close').text(barkerHours.thursdayclose);
+
+        $('table .lewis + .hours-open').text(barkerHours.thursdayopen);
+        $('table .lewis + .hours-close').text(barkerHours.thursdayclose);
+
+        $('table .rotch + .hours-open').text(barkerHours.thursdayopen);
+        $('table .rotch + .hours-close').text(barkerHours.thursdayclose);
+
+    }
+
+    // Friday
+    if (day === 5) {
+
+        $('table .barker + .hours-open').text(barkerHours.fridayopen);
+        $('table .barker + .hours-close').text(barkerHours.fridayclose);
+
+        $('table .dewey + .hours-open').text(barkerHours.fridayopen);
+        $('table .dewey + .hours-close').text(barkerHours.fridayclose);
+
+        $('table .hayden + .hours-open').text(barkerHours.fridayopen);
+        $('table .hayden + .hours-close').text(barkerHours.fridayclose);
+
+        $('table .archives + .hours-open').text(barkerHours.fridayopen);
+        $('table .archives + .hours-close').text(barkerHours.fridayclose);
+
+        $('table .lewis + .hours-open').text(barkerHours.fridayopen);
+        $('table .lewis + .hours-close').text(barkerHours.fridayclose);
+
+        $('table .rotch + .hours-open').text(barkerHours.fridayopen);
+        $('table .rotch + .hours-close').text(barkerHours.fridayclose);
+
+    }
+
+    // Saturday
+    if (day === 6) {
+
+        $('table .barker + .hours-open').text(barkerHours.saturdayopen);
+        $('table .barker + .hours-close').text(barkerHours.saturdayclose);
+
+        $('table .dewey + .hours-open').text(barkerHours.saturdayopen);
+        $('table .dewey + .hours-close').text(barkerHours.saturdayclose);
+
+        $('table .hayden + .hours-open').text(barkerHours.saturdayopen);
+        $('table .hayden + .hours-close').text(barkerHours.saturdayclose);
+
+        $('table .archives + .hours-open').text(barkerHours.saturdayopen);
+        $('table .archives + .hours-close').text(barkerHours.saturdayclose);
+
+        $('table .lewis + .hours-open').text(barkerHours.saturdayopen);
+        $('table .lewis + .hours-close').text(barkerHours.saturdayclose);
+
+        $('table .rotch + .hours-open').text(barkerHours.saturdayopen);
+        $('table .rotch + .hours-close').text(barkerHours.saturdayclose);
+
+    }
+
+    // Sunday
+    if (day === 0) {
+
+        $('table .barker + .hours-open').text(barkerHours.sundayopen);
+        $('table .barker + .hours-close').text(barkerHours.sundayclose);
+
+        $('table .dewey + .hours-open').text(barkerHours.sundayopen);
+        $('table .dewey + .hours-close').text(barkerHours.sundayclose);
+
+        $('table .hayden + .hours-open').text(barkerHours.sundayopen);
+        $('table .hayden + .hours-close').text(barkerHours.sundayclose);
+
+        $('table .archives + .hours-open').text(barkerHours.sundayopen);
+        $('table .archives + .hours-close').text(barkerHours.sundayclose);
+
+        $('table .lewis + .hours-open').text(barkerHours.sundayopen);
+        $('table .lewis + .hours-close').text(barkerHours.sundayclose);
+
+        $('table .rotch + .hours-open').text(barkerHours.sundayopen);
+        $('table .rotch + .hours-close').text(barkerHours.sundayclose);
+
+    }
+
+    // Thursday
+    // if (day === 4) {
+    //   barkerOpen = barkerHours.thursdayopen;
+    //   barkerClose = barkerHours.thursdayclose;
+    // }
+    // // Friday
+    // if (day === 5) {
+    //   barkerOpen = barkerHours.fridayopen;
+    //   barkerClose = barkerHours.fridayclose;
+    // }
+    //console.log(barkerOpen, barkerClose);
+
+    // Count the locations
+    // var locationsNum = data.locations.elements.length;
+    // console.log('there are '+locationsNum+' locations');
+    // // Empty locations array
+    // var locations = [];
+    // // Make an array of all locations
+    // for (var i = 0; i < locationsNum; i++) {
+    //   locations.push(data.locations.elements[i].location.toLowerCase());
+    // };
+
+    // console.log(locations);
+
+    // Barker hours
+
+
+
+    
     // Exceptions
     var exceptionsNum = data.barkerExceptions.elements.length;
-    console.log(exceptionsNum);
+    console.log('there are '+exceptionsNum+' exceptions');
     var exceptionsArr = [];
     for (var i = 0; i < exceptionsNum; i++) {
-      console.log(i)
       exceptionsArr.push(data.barkerExceptions.elements[i].exceptiondate);
     };
-    console.log($.inArray(today, exceptionsArr));
+    console.log(exceptionsArr);
+
+    // Check if today is an exception (-1 means there _is_ an exception)
     if (!$.inArray(today, exceptionsArr) === -1) {
-      console.log('there is an exception');
+      console.log('today is an exception');
     }
 
     else {
-      console.log('there is not an exception');
+      console.log('today is not an exception');
     }
     
   }
