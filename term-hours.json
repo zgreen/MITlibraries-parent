@@ -1,464 +1,186 @@
 {
-	"terms" : {
-		"fall2015" : {
-			"termStart" : "8/25/2014",
+	"terms" : [
+		{
+			"termName" : "Fall 2015",
+			"termStart": "8/25/2014",
 			"termEnd" : "12/19/2014",
-			"locations" : {
-				"barker" : {
+			"locations" : [
+				{
+					"locationName" : "barker",
 					"monday" : {
-						"open" : "8:30am",
-						"close" : "11:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
 					"tuesday" : {
-						"open" : "8:30am",
-						"close" : "11:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
 					"wednesday" : {
-						"open" : "8:30am",
-						"close" : "11:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
 					"thursday" : {
-						"open" : "8:30am",
-						"close" : "11:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
 					"friday" : {
-						"open" : "8:30am",
-						"close" : "6:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
 					"saturday" : {
-						"open" : "11:00am",
-						"close" : "7:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
 					"sunday" : {
-						"open" : "11:00am",
-						"close" : "11:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
-					"exceptions" : {
-						"9/1/2014" : {
-							"open" : "closed",
-							"close" : "closed"
+					"exceptions" : [
+						{
+							"date" : "9/1/2014",
+							"closedAll" : true,
+							"open" : "",
+							"closed" : ""
 						},
-						"10/13/2014" : {
-							"open" : "12:00pm",
-							"close" : "11:00pm"
-						}
-					}
-				},
-				"dewey" : {
-					"monday" : {
-						"open" : "8:30am",
-						"close" : "11:00pm"
-					},
-					"tuesday" : {
-						"open" : "8:30am",
-						"close" : "11:00pm"
-					},
-					"wednesday" : {
-						"open" : "8:30am",
-						"close" : "11:00pm"
-					},
-					"thursday" : {
-						"open" : "8:30am",
-						"close" : "11:00pm"
-					},
-					"friday" : {
-						"open" : "8:30am",
-						"close" : "6:00pm"
-					},
-					"saturday" : {
-						"open" : "11:00am",
-						"close" : "7:00pm"
-					},
-					"sunday" : {
-						"open" : "11:00am",
-						"close" : "11:00pm"
-					},
-					"exceptions" : {
-						"9/1/2014" : {
-							"open" : "closed",
-							"close" : "closed"
-						}
-					}
-				},
-				"hayden" : {
-					"monday" : {
-						"open" : "8:30am",
-						"close" : "12:00am"
-					},
-					"tuesday" : {
-						"open" : "8:30am",
-						"close" : "11:00pm"
-					},
-					"wednesday" : {
-						"open" : "8:30am",
-						"close" : "12:00am"
-					},
-					"thursday" : {
-						"open" : "8:30am",
-						"close" : "12:00am"
-					},
-					"friday" : {
-						"open" : "8:30am",
-						"close" : "8:00pm"
-					},
-					"saturday" : {
-						"open" : "11:00am",
-						"close" : "7:00pm"
-					},
-					"sunday" : {
-						"open" : "11:00am",
-						"close" : "12:00am"
-					},
-					"exceptions" : {
-						"9/1/2014" : {
-							"open" : "closed",
-							"close" : "closed"
-						}
-					}
-				},
-				"archives" : {
-					"monday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"tuesday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"wednesday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"thursday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"friday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"saturday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"sunday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"exceptions" : {
-						"9/1/2014" : {
-							"open" : "closed",
-							"close" : "closed"
+						{
+							"date" : "9/8/2014",
+							"closedAll" : true,
+							"open" : "testing",
+							"closed" : "exceptions"
 						},
-						"10/7/2014" : {
-							"open" : "1:00pm",
-							"close" : "4:00pm"
+						{
+							"date" : "11/24/2014",
+							"closedAll" : true,
+							"open" : "",
+							"closed" : ""
 						}
-					}
+					]
 				},
-				"lewis" : {
+				{
+					"locationName" : "dewey",
 					"monday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
 					"tuesday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
 					"wednesday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
 					"thursday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
 					"friday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
 					"saturday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
 					"sunday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
-					"exceptions" : {
-						"9/1/2014" : {
-							"open" : "closed",
-							"close" : "closed"
+					"exceptions" : [
+						{
+							"date" : "",
+							"closedAll" : true,
+							"open" : "",
+							"closed" : ""
 						}
-					}
-				},
-				"rotch" : {
-					"monday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"tuesday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"wednesday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"thursday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"friday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"saturday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"sunday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"exceptions" : {
-						"9/1/2014" : {
-							"open" : "closed",
-							"close" : "closed"
-						}
-					}
+					]
 				}
-			}
+			]
 		},
-		"otherTerm" : {
-			"termStart" : "10/25/2014",
+		{
+			"termName" : "another term",
+			"termStart": "8/25/2015",
 			"termEnd" : "12/19/2015",
-			"locations" : {
-				"barker" : {
+			"locations" : [
+				{
+					"locationName" : "barker",
 					"monday" : {
-						"open" : "8:30am",
-						"close" : "11:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
 					"tuesday" : {
-						"open" : "8:30am",
-						"close" : "11:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
 					"wednesday" : {
-						"open" : "8:30am",
-						"close" : "11:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
 					"thursday" : {
-						"open" : "8:30am",
-						"close" : "11:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
 					"friday" : {
-						"open" : "8:30am",
-						"close" : "6:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
 					"saturday" : {
-						"open" : "11:00am",
-						"close" : "7:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
 					"sunday" : {
-						"open" : "11:00am",
-						"close" : "11:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
-					"exceptions" : {
-						"9/1/2014" : {
-							"open" : "closed",
-							"close" : "closed"
-						},
-						"10/13/2014" : {
-							"open" : "12:00pm",
-							"close" : "11:00pm"
+					"exceptions" : [
+						{
+							"date" : "",
+							"closedAll" : true,
+							"open" : "",
+							"closed" : ""
 						}
-					}
+					]
 				},
-				"dewey" : {
+				{
+					"locationName" : "barker",
 					"monday" : {
-						"open" : "8:30am",
-						"close" : "11:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
 					"tuesday" : {
-						"open" : "8:30am",
-						"close" : "11:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
 					"wednesday" : {
-						"open" : "8:30am",
-						"close" : "11:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
 					"thursday" : {
-						"open" : "8:30am",
-						"close" : "11:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
 					"friday" : {
-						"open" : "8:30am",
-						"close" : "6:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
 					"saturday" : {
-						"open" : "11:00am",
-						"close" : "7:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
 					"sunday" : {
-						"open" : "11:00am",
-						"close" : "11:00pm"
+						"open" : "8:30pm",
+						"closed" : "11:00pm"
 					},
-					"exceptions" : {
-						"9/1/2014" : {
-							"open" : "closed",
-							"close" : "closed"
+					"exceptions" : [
+						{
+							"date" : "",
+							"closedAll" : true,
+							"open" : "",
+							"closed" : ""
 						}
-					}
-				},
-				"hayden" : {
-					"monday" : {
-						"open" : "8:30am",
-						"close" : "12:00am"
-					},
-					"tuesday" : {
-						"open" : "8:30am",
-						"close" : "11:00pm"
-					},
-					"wednesday" : {
-						"open" : "8:30am",
-						"close" : "12:00am"
-					},
-					"thursday" : {
-						"open" : "8:30am",
-						"close" : "12:00am"
-					},
-					"friday" : {
-						"open" : "8:30am",
-						"close" : "8:00pm"
-					},
-					"saturday" : {
-						"open" : "11:00am",
-						"close" : "7:00pm"
-					},
-					"sunday" : {
-						"open" : "11:00am",
-						"close" : "12:00am"
-					},
-					"exceptions" : {
-						"9/1/2014" : {
-							"open" : "closed",
-							"close" : "closed"
-						}
-					}
-				},
-				"archives" : {
-					"monday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"tuesday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"wednesday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"thursday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"friday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"saturday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"sunday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"exceptions" : {
-						"9/1/2014" : {
-							"open" : "closed",
-							"close" : "closed"
-						},
-						"10/7/2014" : {
-							"open" : "1:00pm",
-							"close" : "4:00pm"
-						}
-					}
-				},
-				"lewis" : {
-					"monday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"tuesday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"wednesday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"thursday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"friday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"saturday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"sunday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"exceptions" : {
-						"9/1/2014" : {
-							"open" : "closed",
-							"close" : "closed"
-						}
-					}
-				},
-				"rotch" : {
-					"monday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"tuesday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"wednesday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"thursday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"friday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"saturday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"sunday" : {
-						"open" : "9:00am",
-						"close" : "11:00pm"
-					},
-					"exceptions" : {
-						"9/1/2014" : {
-							"open" : "closed",
-							"close" : "closed"
-						}
-					}
+					]
 				}
-			}
+			]
 		}
-	}
+	]
 }

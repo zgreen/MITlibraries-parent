@@ -142,6 +142,7 @@ function twentytwelve_scripts_styles() {
 	/* All-site JS */
 	
 	wp_enqueue_script('modernizr');
+	wp_enqueue_script('underscore');
 
 	/* Page-specific JS & CSS */
 
