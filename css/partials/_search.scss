@@ -457,6 +457,29 @@
 	}
 }
 
+.no-flexbox.flexboxlegacy {
+	.search--lib-resources {
+		> h2,
+		> .wrap-select--resources,
+		> .input-submit.active,
+		> span.label {
+			display: block;
+			float: left;
+			position: relative;
+		}
+		.input-submit.active button {
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			svg {
+				height: 2.5em;
+				width: 2.5em;
+			}
+		}
+	}
+}
+
 .lte-ie9 {
 	select {
 		-ms-appearance: select;
