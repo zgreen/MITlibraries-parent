@@ -89,7 +89,7 @@
 			</button>
 		</form>
 		<span class="label no-js-hidden">by</span>
-		<div class="wrap-select--keywords flex-container active no-js-hidden">
+		<div class="wrap-select--keywords flex-container no-js-hidden">
 			<select name="" id="" class="keywords option-1 search-by active" tabindex="3" autocomplete="off">
 				<option value="">Keyword</option>
 				<option value="TI ">Title</option>
