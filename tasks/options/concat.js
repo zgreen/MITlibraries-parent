@@ -14,9 +14,9 @@ module.exports = {
   home: {
     src: [
       'js/dev.js',
-      'js/search/*.js',
       'js/search-ie.js',
       'js/search.js',
+      'js/search/*.js',
       'js/hours-home.js',
       'js/news-home.js',
       'js/guides-home.js',
