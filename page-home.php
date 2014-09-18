@@ -34,9 +34,9 @@
 			</ul>
 		</div>
 		<span class="label no-js-hidden">for</span>
-		<form id="bartonplus" class="input-submit flex-container active no-js-hidden">
+		<form id="bartonplus" class="flex-container no-js-hidden">
 			<div class="hidden-fields"></div>
-			<input type="text" class="option-1 active" placeholder="ex: carbon nanotubes" autofocus="autofocus" tabindex="1">
+			<input type="text" class="option-1" placeholder="" autofocus="autofocus" tabindex="1">
 			<button type="submit">
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="16" viewBox="0 0 12 12" alt="search" class="icon-search">
 					<path d="M7.273 0.727q1.187 0 2.19 0.585t1.588 1.588 0.585 2.19-0.585 2.19-1.588 1.588-2.19 0.585q-1.278 0-2.33-0.676l-3.284 3.301q-0.295 0.284-0.688 0.284-0.403 0-0.688-0.284t-0.284-0.688 0.284-0.688l3.301-3.284q-0.676-1.051-0.676-2.33 0-1.188 0.585-2.19t1.588-1.588 2.19-0.585zM7.273 8q0.591 0 1.128-0.23t0.929-0.622 0.622-0.929 0.23-1.128-0.23-1.128-0.622-0.929-0.929-0.622-1.128-0.23-1.128 0.23-0.929 0.622-0.622 0.929-0.23 1.128 0.23 1.128 0.622 0.929 0.929 0.622 1.128 0.23z"></path>
@@ -45,7 +45,7 @@
 		</form>
 		<form id="vera" class="no-js-hidden">
 			<div class="hidden-fields"></div>
-			<input type="text" class="option-2" placeholder="ex: new eng j of med, AIP conf proc">
+			<input type="text" class="option-2" placeholder="">
 			<button type="submit">
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="16" viewBox="0 0 12 12" alt="search" class="icon-search">
 					<path d="M7.273 0.727q1.187 0 2.19 0.585t1.588 1.588 0.585 2.19-0.585 2.19-1.588 1.588-2.19 0.585q-1.278 0-2.33-0.676l-3.284 3.301q-0.295 0.284-0.688 0.284-0.403 0-0.688-0.284t-0.284-0.688 0.284-0.688l3.301-3.284q-0.676-1.051-0.676-2.33 0-1.188 0.585-2.19t1.588-1.588 2.19-0.585zM7.273 8q0.591 0 1.128-0.23t0.929-0.622 0.622-0.929 0.23-1.128-0.23-1.128-0.622-0.929-0.929-0.622-1.128-0.23-1.128 0.23-0.929 0.622-0.622 0.929-0.23 1.128 0.23 1.128 0.622 0.929 0.929 0.622 1.128 0.23z"></path>
@@ -54,7 +54,7 @@
 		</form>
 		<form id="barton" class="no-js-hidden">
 			<div class="hidden-fields"></div>
-			<input type="text" class="option-3 searchtext" id="bookrequest" placeholder="ex: carbon nanotubes, game design">
+			<input type="text" class="option-3 searchtext" id="bookrequest" placeholder="">
 			<button type="submit">
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="16" viewBox="0 0 12 12" alt="search" class="icon-search">
 					<path d="M7.273 0.727q1.187 0 2.19 0.585t1.588 1.588 0.585 2.19-0.585 2.19-1.588 1.588-2.19 0.585q-1.278 0-2.33-0.676l-3.284 3.301q-0.295 0.284-0.688 0.284-0.403 0-0.688-0.284t-0.284-0.688 0.284-0.688l3.301-3.284q-0.676-1.051-0.676-2.33 0-1.188 0.585-2.19t1.588-1.588 2.19-0.585zM7.273 8q0.591 0 1.128-0.23t0.929-0.622 0.622-0.929 0.23-1.128-0.23-1.128-0.622-0.929-0.929-0.622-1.128-0.23-1.128 0.23-0.929 0.622-0.622 0.929-0.23 1.128 0.23 1.128 0.622 0.929 0.929 0.622 1.128 0.23z"></path>
@@ -63,7 +63,7 @@
 		</form>
 		<form id="worldcat" class="no-js-hidden">
 			<div class="hidden-fields"></div>
-			<input type="text" class="option-4" placeholder="ex: carbon nanotubes, game design">
+			<input type="text" class="option-4" placeholder="">
 			<button type="submit">
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="16" viewBox="0 0 12 12" alt="search" class="icon-search">
 					<path d="M7.273 0.727q1.187 0 2.19 0.585t1.588 1.588 0.585 2.19-0.585 2.19-1.588 1.588-2.19 0.585q-1.278 0-2.33-0.676l-3.284 3.301q-0.295 0.284-0.688 0.284-0.403 0-0.688-0.284t-0.284-0.688 0.284-0.688l3.301-3.284q-0.676-1.051-0.676-2.33 0-1.188 0.585-2.19t1.588-1.588 2.19-0.585zM7.273 8q0.591 0 1.128-0.23t0.929-0.622 0.622-0.929 0.23-1.128-0.23-1.128-0.622-0.929-0.929-0.622-1.128-0.23-1.128 0.23-0.929 0.622-0.622 0.929-0.23 1.128 0.23 1.128 0.622 0.929 0.929 0.622 1.128 0.23z"></path>
@@ -72,7 +72,7 @@
 		</form>	
 		<form id="course-reserves" class="no-js-hidden">
 			<div class="hidden-fields"></div>
-			<input type="text" id="coursereservesrequest" value="" class="option-5 searchtext" placeholder="ex: 18.01, STS.320, 21F.108">
+			<input type="text" id="coursereservesrequest" value="" class="option-5 searchtext" placeholder="">
 			<button type="submit">
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="16" viewBox="0 0 12 12" alt="search" class="icon-search">
 					<path d="M7.273 0.727q1.187 0 2.19 0.585t1.588 1.588 0.585 2.19-0.585 2.19-1.588 1.588-2.19 0.585q-1.278 0-2.33-0.676l-3.284 3.301q-0.295 0.284-0.688 0.284-0.403 0-0.688-0.284t-0.284-0.688 0.284-0.688l3.301-3.284q-0.676-1.051-0.676-2.33 0-1.188 0.585-2.19t1.588-1.588 2.19-0.585zM7.273 8q0.591 0 1.128-0.23t0.929-0.622 0.622-0.929 0.23-1.128-0.23-1.128-0.622-0.929-0.929-0.622-1.128-0.23-1.128 0.23-0.929 0.622-0.622 0.929-0.23 1.128 0.23 1.128 0.622 0.929 0.929 0.622 1.128 0.23z"></path>
@@ -81,7 +81,7 @@
 		</form>
 		<form id="site-search" class="no-js-hidden">
 			<div class="hidden-fields"></div>
-			<input type="text" class="option-6" placeholder="ex: hours">
+			<input type="text" class="option-6" placeholder="">
 			<button type="submit">
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="16" viewBox="0 0 12 12" alt="search" class="icon-search">
 					<path d="M7.273 0.727q1.187 0 2.19 0.585t1.588 1.588 0.585 2.19-0.585 2.19-1.588 1.588-2.19 0.585q-1.278 0-2.33-0.676l-3.284 3.301q-0.295 0.284-0.688 0.284-0.403 0-0.688-0.284t-0.284-0.688 0.284-0.688l3.301-3.284q-0.676-1.051-0.676-2.33 0-1.188 0.585-2.19t1.588-1.588 2.19-0.585zM7.273 8q0.591 0 1.128-0.23t0.929-0.622 0.622-0.929 0.23-1.128-0.23-1.128-0.622-0.929-0.929-0.622-1.128-0.23-1.128 0.23-0.929 0.622-0.622 0.929-0.23 1.128 0.23 1.128 0.622 0.929 0.929 0.622 1.128 0.23z"></path>
@@ -89,8 +89,8 @@
 			</button>
 		</form>
 		<span class="label no-js-hidden">by</span>
-		<div class="wrap-select--keywords flex-container active no-js-hidden">
-			<select name="" id="" class="keywords option-1 search-by active" tabindex="3" autocomplete="off">
+		<div class="wrap-select--keywords flex-container no-js-hidden">
+			<select name="" id="" class="keywords option-1 search-by" tabindex="3" autocomplete="off">
 				<option value="">Keyword</option>
 				<option value="TI ">Title</option>
 				<option value="AU ">Author</option>
@@ -135,7 +135,7 @@
 				<option value="keyword">Keyword</option>
 			</select>
 		</div>
-		<a href="http://libraries.mit.edu/bartonplus-advanced" class="search-advanced bartonplus active no-js-hidden">Go to BartonPlus advanced search</a>
+		<a href="http://libraries.mit.edu/bartonplus-advanced" class="search-advanced bartonplus no-js-hidden">Go to BartonPlus advanced search</a>
 		<a href="http://libraries.mit.edu/barton-advanced" class="search-advanced barton no-js-hidden">Go to Barton advanced search</a>
 		<a href="http://mit.worldcat.org/advancedsearch" class="search-advanced worldcat no-js-hidden">Go to WorldCat advanced search</a>
 		<a href="http://libraries.mit.edu/barton-reserves" class="search-advanced course-reserves no-js-hidden">Go to Course Reserves advanced search</a>
