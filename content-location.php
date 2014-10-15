@@ -32,7 +32,6 @@
 	$study24 = get_field("study_24");
 
 	$temp = $post;
-	$hasHours = hasHours($locationId, date("Y-m-d"));
 	$post = $temp;
 	
 	
@@ -93,13 +92,11 @@
 			</div><!-- end div.libraryContent -->
 			
 			<div class="hours-today">
-				<?php if ($hasHours): ?>
-					<span>Today's hours: <b data-location-hours="<?php the_title(); ?>"></b></span>
-					<?php if ($study24 == 1): ?>
-						<a class="study-24-7" href="<?php echo $gStudy24Url; ?>" alt="This location contains one or more study spaces available 24 hours a day, seven days a week. Click the link for more info." title="Study 24/7">Study 24/7</a>
-					<?php endif; ?>
-					<a href="/hours" class="link-hours-all">See all hours <i class="icon-arrow-right"></i></a>
+				<span>Today's hours: <strong data-location-hours="<?php the_title(); ?>"></strong></span>
+				<?php if ($study24 == 1): ?>
+					<a class="study-24-7" href="<?php echo $gStudy24Url; ?>" alt="This location contains one or more study spaces available 24 hours a day, seven days a week. Click the link for more info." title="Study 24/7">Study 24/7</a>
 				<?php endif; ?>
+				<a href="/hours" class="link-hours-all">See all hours <i class="icon-arrow-right"></i></a>
 			</div>					
 
 		</div><!-- end div.flex-item -->
@@ -172,7 +169,7 @@
 									<h3 class="profileTitle"><span class="intro">Featured expert:</span><span class="name"><?php echo $name; ?></span><span class="bio"><?php echo $bio; ?></span></h3>
 									<div class="links">
 										<a class="primary" href="<?php echo $url; ?>" target="_blank">How can I help? <i class="icon-arrow-right"></i></a>
-										<a href="http://libguides.mit.edu/content.php?pid=110460&sid=1651114" target="_blank">See all our experts <i class="icon-arrow-right"></i></a>
+										<a href="/experts">See all our experts <i class="icon-arrow-right"></i></a>
 									</div>
 
 								</div>
