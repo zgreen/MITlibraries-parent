@@ -109,7 +109,13 @@ function twentytwelve_scripts_styles() {
 
 	wp_register_style('libraries-global', get_template_directory_uri() . '/css/build/minified/global.css', array('twentytwelve-style'), '2.0.2');
 
+	wp_register_style('mitlib-news-global', get_template_directory_uri() . '/css/build/minified/news-global.min.css', array('twentytwelve-style'), '1.0.0');
+
 	wp_enqueue_style('libraries-global');
+
+	if (get_current_blog_id() === 7) {
+		wp_enqueue_style('mitlib-news-global');
+	};
 
 	/*
 	 * Loads the Internet Explorer specific stylesheet.
