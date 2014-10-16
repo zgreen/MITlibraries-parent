@@ -1,0 +1,15 @@
+.posts--preview {
+	flex-wrap: wrap;
+	padding: 1.5em 0;
+}
+
+.posts--preview .post {
+	flex-direction: column;
+	padding: 1.5em;
+	width: 33%;
+}
+
+.posts--preview .post:first-of-type {
+	flex-direction: row;
+	width: 100%;
+}
