@@ -9,7 +9,29 @@
 	width: 33%;
 }
 
-.posts--preview .post:first-of-type {
+// The first post, if it has an image
+.posts--preview .post:first-of-type.has-image {
 	flex-direction: row;
 	width: 100%;
+}
+
+// Add a gradient "border" if no image
+.posts--preview .no-image:before {
+	@include gradient-blue;
+	content: '';
+	display: block;
+	height: 1em;
+	width: 100%;
+}
+
+.posts--preview .title-post {
+	background: $white;
+}
+
+.posts--preview .excerpt-post {
+	background: $white;
+}
+
+.post .date-post {
+	font-style: italic;
 }
