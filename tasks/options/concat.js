@@ -38,6 +38,7 @@ module.exports = {
   search: {
     src: [
       'js/search.js',
+      'js/search/*.js',
       'js/search-ie.js',
       'js/ga_discovery.js'
     ],
