@@ -67,7 +67,15 @@ $(function(){
   }
   // No localStorage
   else {
-    // Activate the first search tool
-    resFirst.addClass('active');
+    // Add active class to first ul#resources option if not saved to localStorage
+      resFirst.addClass('active');
+      // Set the active limiter
+      $('#search-main select.'+searchLimiter).addClass('active').parent().addClass('active');
+      // Set the active search form
+      $('#search-main form#'+searchTarget).addClass('input-submit active');
+      $('#search-main input.'+searchLimiter).addClass('active');
+      // Run searchBy function, which sets the correct placeholder text
+      searchBy();
+      $('#search-main a.search-advanced.'+searchTarget).addClass('active');
   }
 });
