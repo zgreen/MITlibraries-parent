@@ -16,6 +16,7 @@ module.exports = {
       'js/dev.js',
       'js/search-ie.js',
       'js/search.js',
+      'js/search/*.js',
       'js/libs/*.js',
       'js/hours-today.js',
       'js/hours-home.js',
@@ -39,6 +40,7 @@ module.exports = {
   search: {
     src: [
       'js/search.js',
+      'js/search/*.js',
       'js/search-ie.js',
       'js/ga_discovery.js'
     ],
