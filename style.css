@@ -1249,7 +1249,7 @@ a.comment-edit-link:hover {
 		line-height: 1.846153846;
 		margin-bottom: 0;
 	}
-	
+		
 	.menu-toggle {
 		display: none;
 	}
@@ -1397,4 +1397,11 @@ a.comment-edit-link:hover {
 		margin-left: 50px;
 		margin-left: 3.57142857rem;
 	}
+	.locationPage .tab2 .first {
+	width: 20%;
+	}
+	.locationPage .tab .second {
+	width: 70%;
+	}
+
 }
