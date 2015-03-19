@@ -11,8 +11,9 @@ lib-cov
 pids
 logs
 results
-_notes
-dwsync.xml
+_notes/
+
+
 
 npm-debug.log
 
