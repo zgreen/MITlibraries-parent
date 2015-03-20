@@ -17,6 +17,7 @@
 		.first {
 			@include bp-tablet--portrait {
 				margin-right: 1.5em;
+				  width: 42%;
 				
 			}
 			
@@ -24,10 +25,12 @@
 		.second {
 			@include bp-tablet--portrait {
 			
+			
 			}
 		}
 	}
-	.tab2{
+	.tab2 {
+		
 		.first{
 			width: 20%;
 			}

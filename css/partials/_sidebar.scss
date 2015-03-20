@@ -9,7 +9,7 @@
 		.widget-title {
 			color: #111111;
 			@include font-size(19px);
-			line-height: 1;
+			line-height: 23px;
 			font-weight: 500;
 			@include rem-first--4-values(margin, 0, 0, 0.667, 0);
 			@include rem-first(padding-top, 0);
