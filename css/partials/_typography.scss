@@ -21,11 +21,23 @@ h2 {
 
 h3 {
 	font-size: 1.125em;
-	font-weight: 300;
+	font-weight: 400;
+	padding-bottom: 3px;
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	@include bp-tablet--portrait {
 		font-size: 1.375em;
 	}
 }
+
+.home h3{
+	font-weight: 300;
+	}
+.home #home-posts-news h3{
+	font-weight: 400;
+	}
+
 
 a {
 	color: $color-link-primary;

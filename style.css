@@ -55,6 +55,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body {
 	line-height: 1;
 }
+body{
+	
+	background-color: #ff00b4;
+}
+
 ol,
 ul {
 	list-style: none;
@@ -74,6 +79,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.title-page{position:relative;}
 caption,
 th,
 td {
@@ -1191,6 +1197,22 @@ a.comment-edit-link:hover {
 .required {
 	color: red;
 }
+/* Hours */
+#prevWeek {
+	width:33%;
+	float:left
+}
+#thisWeek {
+	width:33%;
+	float:left;
+	text-align: center;
+	
+}
+#nextWeek {
+	width:33%;
+	float:right;
+	text-align: right;
+}
 
 /* =Media queries
 -------------------------------------------------------------- */
@@ -1232,7 +1254,7 @@ a.comment-edit-link:hover {
 		line-height: 1.846153846;
 		margin-bottom: 0;
 	}
-	
+		
 	.menu-toggle {
 		display: none;
 	}
@@ -1380,4 +1402,5 @@ a.comment-edit-link:hover {
 		margin-left: 50px;
 		margin-left: 3.57142857rem;
 	}
+	
 }
