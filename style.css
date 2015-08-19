@@ -168,6 +168,39 @@ img {
 	content: "";
 }
 
+/* Accessibility/ARIA for search button */
+.visually-hidden {
+position: absolute  !important;
+clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+clip: rect(1px, 1px, 1px, 1px);
+padding:0 !important;
+border:0 !important;
+height: 1px !important;
+width: 1px !important;
+overflow: hidden;
+}
+
+/* removes buttons and form controls from tab order if inside a block with class visually-hidden */
+body:hover .visually-hidden a,
+body:hover .visually-hidden input,
+body:hover .visually-hidden button {
+display: none !important;
+}
+
+/* for screen readers */
+.hidden-text {
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+
+body {
+	font-family: 'Open Sans', Helvetica, sans-serif !important;
+}
+
 
 /* =Repeatable patterns
 -------------------------------------------------------------- */
@@ -343,7 +376,7 @@ video {
 	font-style: italic;
 	font-size: 12px;
 	font-size: 0.857142857rem;
-	line-height: 2;
+	line-height: 1.5;
 	color: #757575;
 }
 img.wp-smiley,
@@ -611,8 +644,12 @@ article.sticky .featured-post {
 	line-height: 1.714285714;
 }
 .entry-content h1,
-.comment-content h1,
-.entry-content h2,
+.comment-content h1 {
+	margin-bottom: 24px;
+	margin-bottom: 1.714285714rem;
+	line-height: 1.25;
+}
+/* .entry-content h2,
 .comment-content h2,
 .entry-content h3,
 .comment-content h3,
@@ -625,25 +662,29 @@ article.sticky .featured-post {
 	margin: 24px 0;
 	margin: 1.714285714rem 0;
 	line-height: 1.714285714;
-}
+} */
+
+
 .entry-content h1,
 .comment-content h1 {
-	font-size: 21px;
-	font-size: 1.5rem;
-	line-height: 1.5;
+	font-size: 28px;
+	font-size: 2rem;
+	line-height: 1.25;
 }
 .entry-content h2,
 .comment-content h2,
 .mu_register h2 {
 	font-size: 18px;
 	font-size: 1.285714286rem;
-	line-height: 1.6;
+	line-height: 1.25;
+	margin-bottom: 10px;
 }
 .entry-content h3,
 .comment-content h3 {
 	font-size: 16px;
 	font-size: 1.142857143rem;
-	line-height: 1.846153846;
+	line-height: 1.25;
+	margin-bottom: 10px;
 }
 .entry-content h4,
 .comment-content h4 {
@@ -694,6 +735,9 @@ article.sticky .featured-post {
 .comment-content ul,
 .mu_register ul {
 	list-style: disc outside;
+}
+.entry-content ul.arrows li{
+	list-style: none !important;
 }
 .entry-content ol,
 .comment-content ol {
@@ -805,11 +849,11 @@ article.sticky .featured-post {
 }
 .entry-content table,
 .comment-content table {
-	border-bottom: 1px solid #ededed;
+/*	border-bottom: 1px solid #ededed;  */
 	color: #000; /* was #757575 */
 	font-size: 12px;
 	font-size: 0.857142857rem;
-	line-height: 2;
+/*	line-height: 2;  */
 	margin: 0 0 24px;
 	margin: 0 0 1.714285714rem;
 	width: 100%;
@@ -821,10 +865,19 @@ article.sticky .featured-post {
 	margin: 24px 0;
 	margin: 1.714285714rem 0;
 }
-.entry-content td,
-.comment-content td {
-	border-top: 1px solid #ededed;
-	padding: 6px 10px 6px 0;
+.entry-content td {
+/*	border-top: 1px solid #ededed;  */
+	padding: 15px 0;
+	width: 80%;
+}
+.entry-content td:first-child {
+	padding: 15px 0;
+	width: 20%;
+}
+.comment-content td,
+.entry-content>table.experts td {
+	padding: 10px 10px 10px 0;
+	width:auto;
 }
 .site-content article {
 	border-bottom: 4px double #ededed;
@@ -1190,6 +1243,18 @@ a.comment-edit-link:hover {
 }
 .required {
 	color: red;
+}
+
+
+/* Search Form / 404 page
+-------------------------------------------------------------- */
+
+.error404 form#cse-search-box {
+	margin-bottom: 25px;
+}
+
+.error404 #content {
+	padding: 0 15px;
 }
 
 /* =Media queries

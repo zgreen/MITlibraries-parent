@@ -1,5 +1,8 @@
 // A lot this--colors especially--could probably be better handles with a function or two.
 .home {
+	h1, h2, h3 {
+		font-weight: 300;
+	}
 	.content-main {
 		flex-wrap: wrap;
 		@include bp-tablet--portrait {
@@ -33,10 +36,18 @@
 		flex-direction: column;
 		h2 {
 			border-bottom: 1px solid $color-secondary;
-			color: $color-hours-locations;
-			text-align: center;
+			text-align: left;
 			@include bp-tablet--portrait {
-				padding: 0.5em 0 0.25em;
+				padding: 0.5em .5em 0.25em;
+			}
+			a {
+			color: $color-hours-locations;
+			font-weight: 300;
+			}
+		}
+		h3 {
+			a {
+				font-weight: 300;
 			}
 		}
 		p {
@@ -244,10 +255,18 @@
 	.news-events {
 		h2 {
 			border-bottom: 1px solid $color-secondary;
-			color: $color-news-events;
 			text-align: center;
 			@include bp-tablet--portrait {
 				display: none;
+			}
+			a {
+				color: $color-news-events;
+				font-weight: 300;
+			}
+		}
+		h3 {
+			a {
+				font-weight: 300;
 			}
 		}
 		svg {
@@ -336,8 +355,12 @@
 			padding: 0 1.25em 2.5em;
 		}
 		h2 {
-			color: $color-guides-experts;
-			text-align: center;
+			text-align: left;
+			padding: 1em .5em;
+			a {
+				color: $color-guides-experts;
+				font-weight: 300;
+			}
 		}
 		p {
 			margin: 0 1em;

@@ -1,4 +1,21 @@
 // Note: much of this is leftover from v1 of this theme (the "L+T" theme), and needs to be cleaned up.
+#prevWeek {
+	width: 33%;
+	float: left;
+}
+
+#thisWeek {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+
+#nextWeek {
+	width: 33%;
+	float: right;
+	text-align: right;
+}
+
 .specialHours {
 	font-weight: bold;
 }
@@ -177,6 +194,13 @@
 	color: #ffcc33;
 }
 
+div.libraryAlert {
+	border: 1px solid #ccc !important;
+	-webkit-box-shadow: 0 0 5px 2px #eee !important;
+    -moz-box-shadow: 0 0 5px 2px #eee;
+    box-shadow: 0 0 5px 2px #eee !important;
+}
+
 .cal-hours {
 	position: absolute;
 	top: 10px;
@@ -234,6 +258,9 @@
 	}
 	.locations-more {
 		@include rem-first--2-values(margin, 1.5, 0);
+	}
+	.locations-more h4 {
+		padding-top: 15px;
 	}
 }
 .wrap-cal-hours {

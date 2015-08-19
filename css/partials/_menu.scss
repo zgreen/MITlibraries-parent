@@ -15,8 +15,12 @@
     width: 100%;
     a {
       width: 100%;
+      &.hover {
+	      color: #fff;
+      }
     }
   }
+
   @include hidden-visually;
   .small {
     display: none;
@@ -198,7 +202,7 @@
       &:not(.extra):after {
         content: url(#{$imagesPath}/arrow-right-sfw.svg);
         display: inline-block;
-        margin-left: 0.25em; 
+        margin-left: 0.25em;
       }
     }
   }
@@ -208,16 +212,19 @@
     display: inline-block;
     margin-right: 4px;
   }
-  .heading-col {
+  h3.heading-col {
     color: #7c7c7d;
     display: block;
     font-size: 0.6em;
     font-weight: bold;
     @include rem-first--4-values(margin, 1, 0, 0.5, 0.5);
     text-transform: uppercase;
+    padding-bottom: 0;
   }
 }
-
+.nav-page {
+  margin-bottom: 1rem !important;
+}
 .no-csstransitions {
   .link-primary {
     .links-sub {
@@ -327,6 +334,15 @@
       }
     }
   }
+}
+
+.nav-second>li>a:hover {
+	color: #338bc5 !important;
+	text-decoration: underline;
+}
+
+.mobile-display {
+	display: none;
 }
 
 .menu--toggle {
