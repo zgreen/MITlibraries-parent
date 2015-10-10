@@ -6,7 +6,7 @@ module.exports = {
       'js/ga_links.js',
       'js/menu.toggle.js',
       'js/libs/*.js',
-      'js/hours-today.js',
+      'js/hours-lookup.js',
       'js/alerts.js'
     ],
     dest: 'js/build/production.js'
@@ -17,9 +17,8 @@ module.exports = {
       'js/search-ie.js',
       'js/search.js',
       'js/libs/*.js',
-      'js/hours-today.js',
       'js/hours-home.js',
-      'js/news-home.js',
+      'js/hours-lookup.js',
       'js/guides-home.js',
       'js/experts-home.js',
       'js/ga_discovery.js',
@@ -28,13 +27,13 @@ module.exports = {
     dest: 'js/build/home.js'
   },
   hours: {
-  	src: [
-  		'js/sticky/*.js',
-  		'js/sticky/scrollStick/*.js',
-  		'libs/datepicker/glDatepicker.js',
-  		'js/make.datepicker.js'
-  	],
-  	dest: 'js/build/hours.js'
+    src: [
+      'js/sticky/*.js',
+      'js/sticky/scrollStick/*.js',
+      'libs/datepicker/glDatepicker.js',
+      'js/make.datepicker.js'
+    ],
+    dest: 'js/build/hours.js'
   },
   search: {
     src: [

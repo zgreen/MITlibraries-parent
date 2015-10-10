@@ -1,4 +1,21 @@
 // Note: much of this is leftover from v1 of this theme (the "L+T" theme), and needs to be cleaned up.
+#prevWeek {
+	width: 33%;
+	float: left;
+}
+
+#thisWeek {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+
+#nextWeek {
+	width: 33%;
+	float: right;
+	text-align: right;
+}
+
 .specialHours {
 	font-weight: bold;
 }
@@ -9,6 +26,7 @@
 
 #hourContent {
 	width: 100%;
+	padding-left: 0 !important;
 }	
 
 #hourNav {
@@ -16,6 +34,10 @@
 	margin: 0;
 	position: relative;
 	max-width: 100%;
+}
+
+.libraryContent {
+	padding-right: .5em;
 }
 
 .isSticky #hourNav {
@@ -145,8 +167,6 @@
 	display: block;
 	font-size: 1em;
 	margin-top: 0.5em;
-	margin-left: 1em;
-	max-width: 14em;
 	padding: 0.25em 0.25em 0.25em 2em;
 	position: relative;
 }
@@ -154,11 +174,10 @@
 .hrList .libraryAlert .icon-exclamation-sign {
 	color: #ffcc33;
 	float: left;
-	font-size: 1.5em;
-	margin-top: -12px;
-	margin-left: -1.075em;
+	font-size: 2em;
 	position: absolute;
-	top: 50%;
+	top: 0;
+	left: 3.5%;
 }
 
 .hrList .libraryAlert h3 {
@@ -175,6 +194,26 @@
 .hrList .libraryAlert h3 a,
 .hrList .libraryAlert p a {
 	color: #ffcc33;
+}
+
+.alertText {
+	font-size: .9em;
+	padding: 2.5% 2.5% 2.5% 5%;
+	font-weight: 400;
+	
+}
+
+.hrList .la-title {
+	color: #fc3;
+	font-weight: 600;
+}
+
+
+div.libraryAlert {
+	border: 1px solid #ccc !important;
+	-webkit-box-shadow: 0 0 5px 2px #eee !important;
+    -moz-box-shadow: 0 0 5px 2px #eee;
+    box-shadow: 0 0 5px 2px #eee !important;
 }
 
 .cal-hours {
@@ -235,6 +274,9 @@
 	.locations-more {
 		@include rem-first--2-values(margin, 1.5, 0);
 	}
+	.locations-more h4 {
+		padding-top: 15px;
+	}
 }
 .wrap-cal-hours {
 	display: none;
@@ -245,11 +287,22 @@
 	}
 }
 
-@include bp-mobile--only {
+@media only screen and (max-width : 780px){
+	#hourContent {
+		min-width: auto !important;
+		padding-left: 0 !important;
+	}
+	.middleAlert {
+		font-size: .85em;
+		padding-right: 1em;
+	}
+	.hidden-non-mobile {
+		display: block;
+	}
 	.hrList {
 		display: block;
 		width: 100%;
-	}
+		}
 	
 	.hrList tr {
 		display: block;
@@ -260,23 +313,24 @@
 		float: left;
 		width: 33px;
 		text-align: center;
-		padding: 10px 5px 10px 5px;
+		padding: 10px 5px;
 	}
 	
 	.hrList td {
 		position: relative;
 		width: 14.28571428571429%;
-		font-size: 10px;
-		line-height: 12px;
 		float: left;
 		min-height: 45px;
 		display: block;
-		padding: 10px 5px 10px 5px;
 		text-align: center;
+		font-weight: 600;
+		min-height: 95px ;
+		line-height: 1.5;
 	}
 	
-	.hrList td h3 {
-		line-height: 12px;
+
+	.hrList .hidden-mobile {
+		display: none !important;
 	}
 	
 	.fullDay {
@@ -312,19 +366,12 @@
 
 	.hrList .name .libraryAlert {
 		line-height: 1.5;
-		margin: 0.5em 0.5em 0 0.5em;
 		min-height: 2em;
-		padding-top: 0.1em;
+		padding: 0.25em 0;
 	}
 
 	.hrList .name .libraryAlert p {
 		margin: 0 !important;
-	}
-
-	.hrList .name .libraryAlert .icon-exclamation-sign {
-		line-height: 1;
-		margin-top: -8px;
-		padding: 0;
 	}
 	
 	.hrList .mobileToday {
@@ -353,16 +400,51 @@
 		top: 10px;
 		right: 10px;
 	}
+	
 	.libraryContent a[href^=tel] {
 		color: #424286;
 	}
 	
-	.nameHolder {
-		width: 80%;
+	.alertText {
+		font-size: .9em;
+		padding: 1% 2.5% 2% 3.5%;
+		font-weight: 400;
+		
 	}
+	
+	.hrList .libraryAlert .icon-exclamation-sign {
+		color: #ffcc33;
+		float: left;
+		font-size: 2em;
+		position: absolute;
+		top: 2.5%;
+		left: 2.5%;
+	}	
+/*	.nameHolder {
+		width: 80%;
+	} */
 	
 	.tdInside {
 		top: 0px;
 		left: 0px;
+	}
+	.locations-more {
+		padding: 0 .5rem;
+	}
+}
+
+@media only screen and (max-width : 628px){
+	.hrList td {
+		font-size: 11px;
+		padding-top: 10px !important;
+		line-height: 1.7;	
+		line-height: 16px !important;
+	}
+	.nameHolder h3 a {
+		font-size: 16px !important;
+		font-weight: 700;
+	}
+	.middleAlert {
+		width: 100% !important;
 	}
 }
